@@ -1,3 +1,16 @@
+# Grafiki
+
+Mirror of https://github.com/lucky-luk3/Grafiki
+
+````
+docker-compose up
+````
+
+---
+
+# Original Readme
+
+
 # Grafiki ![File-list](./grafiki/media/app/imgs/small_face.png?raw=true "file list")
 
 Grafiki is a Django project about Sysmon and graphs, for the time being.  
