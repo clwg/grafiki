@@ -1,0 +1,17 @@
+version: "3.8"
+   
+services:
+  grafiki-db:
+    build: grafiki_database
+    environment:
+      - POSTGRES_DB=grafiki
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+  grafiki-web:
+    build: grafiki_web
+    command: python manage.py runserver 0.0.0.0:8000
+
+    ports:
+      - "8000:8000"
+    depends_on:
+      - grafiki-db
